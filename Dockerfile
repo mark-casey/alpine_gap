@@ -15,6 +15,6 @@ RUN mkdir -p $path
 
 WORKDIR $path
 
-ENTRYPOINT ["/bin/bash", "-c"]
+ENTRYPOINT ["/bin/sh", "-c"]
 
 CMD ["bash"]
