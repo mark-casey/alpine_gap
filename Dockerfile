@@ -9,7 +9,7 @@ RUN apk --update add curl git libzmq nodejs php \
     rm -rf /var/cache/apk/* && \
     npm install -g grunt-cli
 
-ARG path=/var/work
+ARG path="/var/work"
 
 RUN mkdir -p $path
 
