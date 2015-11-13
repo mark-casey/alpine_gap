@@ -1,6 +1,6 @@
 FROM alpine:latest
 
-RUN apk --update add curl git libzmq nodejs php \
+RUN apk --update add bash curl git libzmq nodejs php \
     php-cli php-curl php-intl php-json php-phar \
     wget zeromq-dev && \
     apk add php-zmq --update-cache --repository \
