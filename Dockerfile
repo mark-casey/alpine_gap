@@ -9,7 +9,9 @@ RUN apk --update add bash curl git libzmq nodejs php \
     rm -rf /var/cache/apk/* && \
     npm install -g grunt-cli
 
-ARG path="/var/work"
+# 'ARG' seems to be a very new option in Docker and Quay.io's version of Docker is complaining
+#ARG path="/var/work"
+ENV path="/var/work"
 
 RUN mkdir -p $path
 
